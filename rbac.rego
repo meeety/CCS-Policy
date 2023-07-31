@@ -8,5 +8,6 @@ allow {
 }
 
 user_is_admin {
-	some i data.users[input.user].roles[i] == "admin"
+	some i
+  data.users[input.user].roles[i] == "admin"
 }
